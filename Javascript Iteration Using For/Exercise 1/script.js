@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let display = "Average of 5 numbers\n";
         let total = 0;
         for (let i = 1; i <= 5; i++) {
-            let num = parseInt(prompt("Enter an integer"));
+            let num = Math.floor(Math.random() * 100) + 1;
             total += num;
             display += `${num}\n`;
         }

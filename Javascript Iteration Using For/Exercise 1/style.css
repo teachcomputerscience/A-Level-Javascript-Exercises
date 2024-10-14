@@ -11,10 +11,9 @@ body {
 .container {
     background-color: #fff;
     display:flex;
-    border-radius: 8px;
+    border-radius: 0px 0px 8px 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 80%;
     height:60%;
 }
 
@@ -48,4 +47,18 @@ button:hover {
 
 .left-container, .right-container {
     flex:1;
+}
+
+.title-container {
+    background-color:blue;
+    border-radius: 8px 8px 0px 0px;
+    color: white;
+    padding:10px;
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.container-outer {
+    width: 80%;
 }
