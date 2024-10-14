@@ -10,11 +10,12 @@ body {
 
 .container {
     background-color: #fff;
+    display:flex;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 80%;
-    max-width: 600px;
+    height:60%;
 }
 
 button {
@@ -36,12 +37,15 @@ button:hover {
 }
 
 #output {
-    margin-top: 20px;
+    margin-left:20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
     white-space: pre-wrap; /* Preserve line breaks */
-    min-height: 100px;
     overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+.left-container, .right-container {
+    flex:1;
 }
