@@ -16,8 +16,8 @@ overlay.addEventListener('click', hideModal);
 
 function addValueToArray() {
     let valueToAdd = document.getElementById('valueToAdd').value;
-    alert("added");
     valueArray.push(valueToAdd);
+    hideModal();
 }
 
 
