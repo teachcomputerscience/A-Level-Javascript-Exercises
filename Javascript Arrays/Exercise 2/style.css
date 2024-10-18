@@ -8,18 +8,6 @@ body {
     background-color: #f0f0f0;
 }
 
-#modalInput {
-    position:absolute;
-    top:20%;
-    left:30%;
-    z-index: 999;
-    width:40%;
-    background-color: white;
-    border:1px solid rgb(230, 228, 228);
-    border-radius:5px;
-    display: none;
-}
-
 .container {
     background-color: #fff;
     display:flex;
@@ -75,13 +63,10 @@ button:hover {
     width: 80%;
 }
 
+
 #btnAdd, label, input {
     padding:10px;
     margin:5px;
     flex:1;
     width:20%;
-}
-
-input[type=text] {
-    width:200px
 }
