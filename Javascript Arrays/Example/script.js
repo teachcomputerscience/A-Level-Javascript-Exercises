@@ -7,7 +7,7 @@ let valueArray = [];
 let modalDisplay = false;
 let output = document.getElementById('output');
 
-//assign controls to variables
+//assign controls to variables to add
 let btnAddValue = document.getElementById('btnAddToArray');
 let btnRemoveValue = document.getElementById('btnRemoveFromArray');
 let btnSortArray = document.getElementById('btnSortArray');
