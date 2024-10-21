@@ -51,5 +51,6 @@ function addValueToArray() {
 }
 
 function displayArray() {
-
+    //add code to display items in array
 }
+
