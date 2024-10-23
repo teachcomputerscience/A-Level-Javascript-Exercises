@@ -1,15 +1,36 @@
-// Function to add numbers
-function addNumbers() {
-    let num1 = parseFloat(document.getElementById('number1').value);
-    let num2 = parseFloat(document.getElementById('number2').value);
+//get button control and store in variables
+btnDisplay = document.getElementById('btnDisplay');
 
-    if (isNaN(num1) || isNaN(num2)) {
-        document.getElementById('result').textContent = "Please enter valid numbers!";
+
+//attach event to button
+btnDisplay.addEventListener('click', checkDrivingAge);
+
+function checkDrivingAge() { 
+    let ageInput = document.getElementById('ageInput').value;
+    let message = '';
+
+    // Check if the age input is a valid number
+    if (ageInput !== '' && !isNaN(ageInput)) {
+        let age = parseInt(ageInput);
+
+        if (age < 17) {
+            message = "You are too young to drive.";
+        } else {
+            message = "You are old enough to drive.";
+        }
+
+        if (age === 17) {
+            message += "\nYou can apply for your provision license.";
+        }
+
+        if (age >= 80) {
+            message = "Consider taking the bus.";
+        }
+
     } else {
-        const sum = num1 + num2;
-        document.getElementById('result').textContent = `The sum is: ${sum}`;
+        message = "Please enter a valid age.";
     }
-}
 
-// Event listener for the button click
-document.getElementById('addButton').addEventListener('click', addNumbers);
+    // Display the message in the paragraph
+    document.getElementById('lblDisplay').textContent = message;
+}

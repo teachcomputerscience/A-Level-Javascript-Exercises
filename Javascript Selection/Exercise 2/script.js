@@ -1,16 +1,22 @@
-// Function to calculate the average
-function calculateAverage() {
-    let num1 = parseFloat(document.getElementById('number1').value);
-    let num2 = parseFloat(document.getElementById('number2').value);
-    let num3 = parseFloat(document.getElementById('number3').value);
+document.getElementById('btnCalculate').addEventListener('click', function() {
+    let workerType = document.getElementById('txtType').value.toUpperCase();
+    let hoursWorked = parseFloat(document.getElementById('txtHours').value);
+    let rate = 0;
+    let pay = 0;
+    let message = '';
 
-    if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-        document.getElementById('result').textContent = "Please enter valid numbers!";
+    if (workerType === 'S') {
+        rate = 7.5;
+        pay = rate * hoursWorked;
+        message = "Skilled Worker - " + pay.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
+    } else if (workerType === 'M') {
+        rate = 4.8;
+        pay = rate * hoursWorked;
+        message = "Manual Worker - " + pay.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
     } else {
-        const average = (num1 + num2 + num3) / 3;
-        document.getElementById('result').textContent = `The average is: ${average.toFixed(2)}`;
+        message = "Data Input Error - Must be M or S";
     }
-}
 
-// Event listener for the button click
-document.getElementById('avgButton').addEventListener('click', calculateAverage);
+    // Display the message
+    document.getElementById('lblDisplay').textContent = message;
+});
