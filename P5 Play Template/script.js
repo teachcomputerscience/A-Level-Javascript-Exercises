@@ -1,7 +1,7 @@
 let smiley;
 
 function setup() {
-	new Canvas(500, 120);
+	new Canvas(500, 400);
 	let smileText = `
 ..yyyyyy
 .yybyybyy
@@ -12,8 +12,10 @@ yybyyyybyy
 
 	smiley = new Sprite();
 	smiley.img = spriteArt(smileText, 32);
-}
+} 
 
 function draw() {
-  noLoop();
+    if (kb.pressing('space') || mouse.pressing()) {
+        smiley.x = smiley.x + 1;
+    }   
 }
