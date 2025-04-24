@@ -28,40 +28,45 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    //Quick sort
     function quickSort(arr) {
 
-        //base case
         if (arr.length <= 1) {
-            return arr;
-
-        } 
-        let pivot = arr[arr.length - 1];
-        let i = 0
-        let j = 0
-        let temp
-        let left;
-        let right;
-        while (j < arr.length - 1) {
-            if (arr[j] <= pivot) {
-                temp = arr[j]
-                arr[j] = arr[i]
-                arr[i] = temp
-                i = i + 1
-            } 
-            j = j + 1
+            return arr
         }
-        //swap with pivot
-        temp = arr[arr.length - 1];
-        arr[arr.length - 1] = arr[i];
-        arr[i] = temp;
 
-        //split lists and repeat
-        left = quickSort(arr.slice(0, i));
-        right = quickSort(arr.slice(i + 1));
-        
-        return left.concat(arr[i],right);
+        let i = 0;
+        let j = 0
+        let pivotIndex = arr.length - 1;
+        let pivotValue = arr[pivotIndex];
+        let temp;
+        let leftList;
+        let rightList;
+
+
+        while (j < arr.length - 1) {
+            if(arr[j] <= pivotValue) {
+                //swap values and increment i
+                let temp = arr[j];
+                arr[j] = arr[i];
+                i++
+            }
+            j++
+        }
+
+        //swap pivot into place
+        temp = pivotValue
+        arr[pivotIndex] = arr[i]
+        arr[i] = pivotValue
+
+        //recursive sort
+        leftList = quickSort(arr.slice(0,i));
+        rightList = quickSort(arr.slice(i + 1));
+
+        //return joined list
+        return leftList.concat(arr[i], rightList);
     }
+
+
 
     // Generate a new random array when the button is clicked
     generateButton.addEventListener("click", function() {

@@ -28,42 +28,48 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    //Quick sort
     function quickSort(arr) {
 
-        //base case
         if (arr.length <= 1) {
             return arr;
-
-        } 
-        let pivot = arr[arr.length - 1];
-        let i = - 1
-        let j = arr.length - 1
-        let temp
-        let left;
-        let right;
- 
-
-        while (i < j) {
-            while(arr[i] < pivot) {
-                i++;
-            }
-            while(arr[j] > pivot) {
-                j--;
-            }
-            temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
         }
 
-        left = quickSort(arr.slice(0,i + 1));
-        right = quickSort(arr.slice(i + 1));
+        let i = 0;
+        let j = arr.length - 2;
+        let pivotIndex = arr.length - 1;
+        let pivotValue = arr[pivotIndex];
 
-        return left.concat(right);
+        while (i <= j) {
+            while (arr[i] <= pivotValue && i <= j) {
+                i++;
+            }
+            while (arr[j] >= pivotValue && j >= i) {
+                j--;
+            }    
+
+            if (i <= j) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+        //swap pivot
+        temp = arr[i];
+        arr[i] = arr[pivotIndex];
+        arr[pivotIndex] = temp;
+
+
+        let leftList = quickSort(arr.slice(0, i))
+        let rightList = quickSort(arr.slice(i + 1))
+
+        return leftList.concat(arr[i],rightList);
 
 
 
-    }
+
+  }
+    
 
     // Generate a new random array when the button is clicked
     generateButton.addEventListener("click", function() {
