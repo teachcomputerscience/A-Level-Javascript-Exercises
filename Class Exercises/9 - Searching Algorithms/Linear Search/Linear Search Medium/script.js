@@ -30,6 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return -1;
     }
+
+    function studentSearch(array, target) {
+        let foundIndex = -1;
+        let currentIndex = ___;
+        while (_____________ && ______________) {
+            if (_______________) {
+                foundIndex = _____;
+            } else {
+                ______________;
+            }
+        }
+        return _____;
+    }
     
     
 

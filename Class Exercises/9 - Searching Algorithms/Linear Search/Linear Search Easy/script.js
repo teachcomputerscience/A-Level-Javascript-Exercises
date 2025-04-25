@@ -21,12 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function studentSearch(array, target) {
-        let index = 0;
-        while (index < array.______) {
+        let foundIndex = -1;
+        let currentIndex = 0;
+        while (currentIndex < array.______ && foundIndex == -1) {
             if (array[_____] === target) {
-                return _____;
+                foundIndex = _____;
+            } else {
+            currentIndex++;
             }
-            index++;
         }
         return _____;
     }
