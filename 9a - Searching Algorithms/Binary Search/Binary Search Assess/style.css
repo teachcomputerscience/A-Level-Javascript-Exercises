@@ -1,3 +1,4 @@
+/* Search Section */
 /* Basic Reset */
 * {
     margin: 0;
@@ -86,4 +87,20 @@ h1 {
 h3 {
     color: #333;
     margin-bottom: 10px;
+}
+
+
+
+.search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
