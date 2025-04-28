@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
         return array;
     }
-    
 
     // Generate a new random array when the button is clicked
     generateButton.addEventListener("click", function() {
