@@ -1,8 +1,11 @@
 // Define the folder structure and their respective index.html paths
 const projects = [
-  { name: "Exercise 1", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Exercise 1/index.html" },
-  { name: "Exercise 1", folder: "2 - Javascript Selection", path: "Class Exercises/2 - Javascript Selection/Exercise 1/index.html" },
-  { name: "Exercise 1", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Exercise 1/index.html" },
+  { name: "Basic Addition", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Example Basic Addition/index.html" },
+  { name: "What's the average?", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Example What's the Average/index.html" },
+  { name: "Football Colours", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Example Football Colours/index.html" },
+  { name: "Workers Pay", folder: "2 - Javascript Selection", path: "Class Exercises/2 - Javascript Selection/Workers Pay/index.html" },
+  { name: "EasyPreston Airlines", folder: "2 - Javascript Selection", path: "Class Exercises/2 - Javascript Selection/EasyPreston/index.html" },
+  { name: "Practicing Loops", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Practicing Loops/index.html" },
   { name: "Functions and Procedures", folder: "6 - Functions and Procedures", path: "Class Exercises/6 - Functions and Procedures/index.html" },
   { name: "Javascript Arrays", folder: "7 - Javascript Arrays", path: "Class Exercises/7 - Javascript Arrays/index.html" },
   { name: "Sorting Algorithms", folder: "8 - Sorting Algorithms", path: "Class Exercises/8 - Sorting Algorithms/index.html" },
