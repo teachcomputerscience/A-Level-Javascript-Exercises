@@ -1,12 +1,151 @@
 // Define the folder structure and their respective index.html paths
 const projects = [
+  // Introduction to Javascript tasks
   { 
     name: "Task 1 Example - Basic Addition", 
     folder: "1 - Introduction to Javascript", 
     path: "Class Exercises/1 - Introduction to Javascript/Task 1 Example - Basic Addition/index.html",
     instructions: "Class Exercises/1 - Introduction to Javascript/Task 1 Example - Basic Addition/instructions.md"
   },
-  // Add other projects in the same format...
+  {
+    name: "Task 1a - Multiple Calculations",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 1a - Multiple Calculations/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 1a - Multiple Calculations/instructions.md"
+  },
+  {
+    name: "Task 1b - Area of a Triangle",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 1b - Area of a Triangle/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 1b - Area of a Triangle/instructions.md"
+  },
+  {
+    name: "Task 1c - Circles Calculations",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 1c - Circles Calculations/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 1c - Circles Calculations/instructions.md"
+  },
+  {
+    name: "Task 1d - Whats the Hypotenuse",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 1d - Whats the Hypotenuse/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 1d - Whats the Hypotenuse/instructions.md"
+  },
+  {
+    name: "Task 2 Example - Whats the Average",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2 Example - Whats the Average/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2 Example - Whats the Average/instructions.md"
+  },
+  {
+    name: "Task 2a - Mark Percentage",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2a - Mark Percentage/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2a - Mark Percentage/instructions.md"
+  },
+  {
+    name: "Task 2b - Temperature Converter",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2b - Temperature Converter/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2b - Temperature Converter/instructions.md"
+  },
+  {
+    name: "Task 2c - Convert to CM",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2c - Convert to CM/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2c - Convert to CM/instructions.md"
+  },
+  {
+    name: "Task 2d - Cement Order",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2d - Cement Order/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2d - Cement Order/instructions.md"
+  },
+  {
+    name: "Task 2e - Car Hire",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2e - Car Hire/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2e - Car Hire/instructions.md"
+  },
+  {
+    name: "Task 2f - Commission",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2f - Commission/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2f - Commission/instructions.md"
+  },
+  {
+    name: "Task 2g - Pay Rise",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2g - Pay Rise/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2g - Pay Rise/instructions.md"
+  },
+  {
+    name: "Task 2h - Overtime",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 2h - Overtime/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 2h - Overtime/instructions.md"
+  },
+  {
+    name: "Task 3 Example - Football",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 3 Example - Football/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 3 Example - Football/instructions.md"
+  },
+  {
+    name: "Task 3a - Which Door",
+    folder: "1 - Introduction to Javascript",
+    path: "Class Exercises/1 - Introduction to Javascript/Task 3a - Which Door/index.html",
+    instructions: "Class Exercises/1 - Introduction to Javascript/Task 3a - Which Door/instructions.md"
+  },
+  // Javascript Selection tasks
+  {
+    name: "Task 1 Example - Workers Pay",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 1 Example - Workers Pay/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 1 Example - Workers Pay/instructions.md"
+  },
+  {
+    name: "Task 1a - Golfing Handicap",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 1a - Golfing Handicap/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 1a - Golfing Handicap/instructions.md"
+  },
+  {
+    name: "Task 1b - Shopworker Pay",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 1b - Shopworker Pay/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 1b - Shopworker Pay/instructions.md"
+  },
+  {
+    name: "Task 1c - Maths Papers",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 1c - Maths Papers/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 1c - Maths Papers/instructions.md"
+  },
+  {
+    name: "Task 1d - Whats the Number",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 1d - Whats the Number/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 1d - Whats the Number/instructions.md"
+  },
+  {
+    name: "Task 2 Example - EasyPreston",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 2 Example - EasyPreston/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 2 Example - EasyPreston/instructions.md"
+  },
+  {
+    name: "Task 2a - A Level Grade",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 2a - A Level Grade/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 2a - A Level Grade/instructions.md"
+  },
+  {
+    name: "Task 2b - Vocational Grade",
+    folder: "2 - Javascript Selection",
+    path: "Class Exercises/2 - Javascript Selection/Task 2b - Vocational Grade/index.html",
+    instructions: "Class Exercises/2 - Javascript Selection/Task 2b - Vocational Grade/instructions.md"
+  }
 ];
 
 // Group projects by folder
