@@ -1,6 +1,11 @@
 // Define the folder structure and their respective index.html paths
 const projects = [
-  { name: "Basic Addition", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Example Basic Addition/index.html" },
+  { name: "Task 1 Example - Basic Addition", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Task 1 Example - Basic Addition/index.html" },
+  { name: "Task 1a - Multiple Calculations", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Task 1a - Multiple Calculations/index.html" },
+  { name: "Task 1b - Area of a Triangle", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Task 1b - Area of a Triangle/index.html" },
+  { name: "Task 1c - Circles Calculations", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Task 1c - Circles Calculations/index.html" },
+  { name: "Task 1d - Whats the Hypotenuse", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Task 1d - Whats the Hypotenuse/index.html" },
+
   { name: "What's the average?", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Example What's the Average/index.html" },
   { name: "Football Colours", folder: "1 - Introduction to Javascript", path: "Class Exercises/1 - Introduction to Javascript/Example Football Colours/index.html" },
   { name: "Workers Pay", folder: "2 - Javascript Selection", path: "Class Exercises/2 - Javascript Selection/Workers Pay/index.html" },
