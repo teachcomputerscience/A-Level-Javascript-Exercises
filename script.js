@@ -145,6 +145,37 @@ const projects = [
     folder: "2 - Javascript Selection",
     path: "Class Exercises/2 - Javascript Selection/Task 2b - Vocational Grade/index.html",
     instructions: "Class Exercises/2 - Javascript Selection/Task 2b - Vocational Grade/instructions.md"
+  },
+  // Javascript Iteration Using For tasks
+   {
+    name: "Task 1 Example - Practicing Loops",
+    folder: "3 - Javascript Iteration Using For",
+    path: "Class Exercises/3 - Javascript Iteration Using For/Task 1 Example - Practicing Loops/index.html",
+    instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 1 Example - Practicing Loops/instructions.md"
+  },
+  {
+    name: "Task 1a - Times Tables",
+    folder: "3 - Javascript Iteration Using For",
+    path: "Class Exercises/3 - Javascript Iteration Using For/Task 1a - Times Tables/index.html",
+    instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 1a - Times Tables/instructions.md"
+  },
+  {
+    name: "Task 1b - Number Range Sum",
+    folder: "3 - Javascript Iteration Using For",
+    path: "Class Exercises/3 - Javascript Iteration Using For/Task 1b - Number Range Sum/index.html",
+    instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 1b - Number Range Sum/instructions.md"
+  },
+  {
+    name: "Task 1c - ASCII Capital Letters",
+    folder: "3 - Javascript Iteration Using For",
+    path: "Class Exercises/3 - Javascript Iteration Using For/Task 1c - ASCII Capital Letters/index.html",
+    instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 1c - ASCII Capital Letters/instructions.md"
+  },
+  {
+    name: "Task 1d - Number Statistics",
+    folder: "3 - Javascript Iteration Using For",
+    path: "Class Exercises/3 - Javascript Iteration Using For/Task 1d - Number Statistics/index.html",
+    instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 1d - Number Statistics/instructions.md"
   }
 ];
 
