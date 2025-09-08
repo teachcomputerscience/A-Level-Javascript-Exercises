@@ -4,6 +4,7 @@ document.getElementById('calculateBtn').addEventListener('click', calculateCommi
 function calculateCommission() {
     // TODO:
     // 1. Get all invoice numbers and amounts from the input fields
+    let in1 = document.
     // 2. Calculate:
     //    - Total sales amount
     //    - Commission (20% of total sales)
