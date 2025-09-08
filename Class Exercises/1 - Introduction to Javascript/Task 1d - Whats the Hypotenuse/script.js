@@ -10,9 +10,9 @@ let sA = parseFloat(document.getElementById('sideA').value)
 let sB = parseFloat(document.getElementById('sideB').value)
 
     // 2. Calculate the hypotenuse using the Pythagorean theorem: c = √(a² + b²)
-let a1 = sR( (sA^2) + (sB^2) )
+let a1 = sR((sA*sA) + (sB*sB))
 
     // 3. Display the result in the hypotenuse span element
-
+document.getElementById("hypotenuse").innerText = a1
 
 }

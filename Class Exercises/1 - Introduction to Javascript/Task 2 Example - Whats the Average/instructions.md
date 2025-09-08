@@ -12,3 +12,8 @@ It is good practice to write readable computer code.  The readability of your co
 •	Using meaningful variable names
 
 Make use you use these techniques when completing the following exercises.
+
+
+
+
+
