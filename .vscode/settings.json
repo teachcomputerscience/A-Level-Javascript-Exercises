@@ -1,9 +1,5 @@
 {
-    "liveServer.settings.port": 5502
-}
-{
-     "github.coplilot.inlineSuggest.enable": false
-}
-{ 
+    "liveServer.settings.port": 5502,
+    "github.coplilot.inlineSuggest.enable": false,
     "github.copilot.editor.enableAutoCompletions": false
 }
