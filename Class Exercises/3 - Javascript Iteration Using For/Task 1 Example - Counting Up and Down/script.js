@@ -1,4 +1,5 @@
 // Function to start the counting demonstrations
+//
 function startCounting() {
     // Clear previous outputs
     document.getElementById('countUpOutput').innerHTML = '';

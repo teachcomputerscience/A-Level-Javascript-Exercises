@@ -1,3 +1,7 @@
+function doSomething(n) {
+    console.log(n);
+}
+
 // TODO: Write the countdown function
 function startCountdown() {
     // Get input values
@@ -10,8 +14,17 @@ function startCountdown() {
     
     // TODO: Validate inputs
     // Check if values are valid numbers
+
+
     // Check if start number is positive
+
+
     // Check if delay is at least 100ms
+    for (let i = 1; i < 10; i++){
+        setTimeout(() => {
+            doSomething(i);}
+        , 100);
+    }
     
     // TODO: Disable button during countdown
     
