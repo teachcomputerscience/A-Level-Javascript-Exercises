@@ -21,12 +21,10 @@ positive = true
 }
 
 if (valid == true) {
-    if (end > start && positive) {
-        valid = true
-    } else if (end < start && positive){
+    if (start < end && positive == false) {
         valid = false
-    } else {
-        valid = false 
+    } else if (start > end && positive){
+    valid = false
     }
 }
 
@@ -52,6 +50,8 @@ if (valid == true) {
     // TODO: Display the sequence
     if (valid) {
         document.getElementById('sequenceOutput').innerHTML = sequence.join(' → ');
+    } else {
+        document.getElementById('sequenceOutput').innerHTML = `You have entered an invalid sequence`
     }
     // Join the numbers with arrows between them
 }
