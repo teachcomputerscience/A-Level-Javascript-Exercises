@@ -5,19 +5,25 @@ function doSomething(n) {
 // TODO: Write the countdown function
 function startCountdown() {
     // Get input values
-    const startNum = parseInt(document.getElementById('startNum').value);
-    const delay = parseInt(document.getElementById('delay').value);
+    const startNum = parseInt(display.innerHTML('startNum').value);
+    const delay = parseInt(display.innerHTML('delay').value);
+    let countdown = [];
     
     // Get display element and button
-    const display = document.getElementById('countdownDisplay');
-    const button = document.getElementById('startButton');
+    const display = display.innerHTML('countdownDisplay');
+    const button = display.innerHTML('startButton');
     
     // TODO: Validate inputs
     // Check if values are valid numbers
-
-
+   if (isNaN(startNum) || isNaN(delay)) {
+        display.innerHTML('sequenceOutput').innerHTML = 'Invalid Number';
+        return;
+   }
     // Check if start number is positive
-
+   if (startNum < 0) {
+        display.innerHTML('sequenceOutput').innerHTML = 'Enter a postivive number';
+        return;
+   }
 
     // Check if delay is at least 100ms
     for (let i = 1; i < 10; i++){
@@ -30,8 +36,19 @@ function startCountdown() {
     
     // TODO: Create the countdown loop
     // Use a for loop counting backwards
-    // Use setTimeout to create the delay between numbers
-    
+    // Start from startNum and then work back to 0 
+    for (let i = startNum; i <= 0; i++){
+    // Use setTimeout to create the delay between numbers  
+        setTimeout(startCountdown, delay)
+        countdown.push(i);
+        display.innerHTML('sequenceOutput').innerHTML = i
+
+        // TODO: Show "Blast off!" at the end
+        if (i === 0) {
+            display.innerHTML('sequenceOutput').innerHTML = countdown.join('   BLAST OFF');
+        }
+
+
     // TODO: Show "Blast off!" at the end
     
     // TODO: Re-enable button after countdown finishes
@@ -39,5 +56,5 @@ function startCountdown() {
 
 // Initialize the page
 window.onload = function() {
-    document.getElementById('countdownDisplay').textContent = 'Ready to start!';
+    display.innerHTML('countdownDisplay').textContent = 'Ready to start!';
 };
