@@ -5,23 +5,24 @@ function doSomething(n) {
 // TODO: Write the countdown function
 function startCountdown() {
     // Get input values
-    const startNum = parseInt(display.innerHTML('startNum').value);
-    const delay = parseInt(display.innerHTML('delay').value);
+    const startNum = parseInt(document.getElementById('startNum').innerHTML);
+    const delay = parseInt(document.getElementById('delay').innerHTML);
     let countdown = [];
+    let pt = '';
     
     // Get display element and button
-    const display = display.innerHTML('countdownDisplay');
-    const button = display.innerHTML('startButton');
+    const display = document.getElementById('countdownDisplay');
+    const button = document.getElementById('startButton').innerHTML;
     
     // TODO: Validate inputs
     // Check if values are valid numbers
    if (isNaN(startNum) || isNaN(delay)) {
-        display.innerHTML('sequenceOutput').innerHTML = 'Invalid Number';
+        document.getElementById('sequenceOutput').innerHTML = 'Invalid Number';
         return;
    }
     // Check if start number is positive
    if (startNum < 0) {
-        display.innerHTML('sequenceOutput').innerHTML = 'Enter a postivive number';
+        document.getElementById('sequenceOutput').innerHTML = 'Enter a postivive number';
         return;
    }
 
@@ -33,28 +34,30 @@ function startCountdown() {
     }
     
     // TODO: Disable button during countdown
-    
+    document.getElementById('startButton').disabled = true;
+
     // TODO: Create the countdown loop
     // Use a for loop counting backwards
     // Start from startNum and then work back to 0 
-    for (let i = startNum; i <= 0; i++){
+    for (let i = startNum; i >= 0; i--){
     // Use setTimeout to create the delay between numbers  
-        setTimeout(startCountdown, delay)
-        countdown.push(i);
-        display.innerHTML('sequenceOutput').innerHTML = i
+        setTimeout(startCountdown(i), delay)
+        pt = countdown.push(i);
+        document.getElementById('sequenceOutput').innerHTML = pt
 
         // TODO: Show "Blast off!" at the end
         if (i === 0) {
-            display.innerHTML('sequenceOutput').innerHTML = countdown.join('   BLAST OFF');
+            document.getElementById('sequenceOutput').innerHTML = countdown.join('   BLAST OFF');
+            return;
         }
 
 
-    // TODO: Show "Blast off!" at the end
-    
+    }
     // TODO: Re-enable button after countdown finishes
+    document.getElementById('startButton').disabled = false;
 }
 
 // Initialize the page
 window.onload = function() {
-    display.innerHTML('countdownDisplay').textContent = 'Ready to start!';
+    document.getElementById('countdownDisplay').innerHTML.textContent = 'Ready to start!';
 };
