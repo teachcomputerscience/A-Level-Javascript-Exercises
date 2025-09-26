@@ -5,24 +5,24 @@ function doSomething(n) {
 // TODO: Write the countdown function
 function startCountdown() {
     // Get input values
-    const startNum = parseInt(document.getElementById('startNum').innerHTML);
-    const delay = parseInt(document.getElementById('delay').innerHTML);
+    const startNum = parseInt(document.getElementById('startNum').value);
+    const delay = parseInt(document.getElementById('delay').value);
     let countdown = [];
     let pt = '';
     
     // Get display element and button
     const display = document.getElementById('countdownDisplay');
-    const button = document.getElementById('startButton').innerHTML;
+    const button = document.getElementById('startButton');
     
     // TODO: Validate inputs
     // Check if values are valid numbers
    if (isNaN(startNum) || isNaN(delay)) {
-        document.getElementById('sequenceOutput').innerHTML = 'Invalid Number';
+        document.getElementById('countdownDisplay').innerHTML = 'Invalid Number';
         return;
    }
     // Check if start number is positive
    if (startNum < 0) {
-        document.getElementById('sequenceOutput').innerHTML = 'Enter a postivive number';
+        document.getElementById('countdownDisplay').innerHTML = 'Enter a postivive number';
         return;
    }
 
@@ -43,11 +43,11 @@ function startCountdown() {
     // Use setTimeout to create the delay between numbers  
         setTimeout(startCountdown(i), delay)
         pt = countdown.push(i);
-        document.getElementById('sequenceOutput').innerHTML = pt
+        document.getElementById('countdownDisplay').innerHTML = pt
 
         // TODO: Show "Blast off!" at the end
         if (i === 0) {
-            document.getElementById('sequenceOutput').innerHTML = countdown.join('   BLAST OFF');
+            document.getElementById('countdownDisplay').innerHTML = countdown.join('   BLAST OFF');
             return;
         }
 
@@ -59,5 +59,5 @@ function startCountdown() {
 
 // Initialize the page
 window.onload = function() {
-    document.getElementById('countdownDisplay').innerHTML.textContent = 'Ready to start!';
+    document.getElementById('countdownDisplay').innerHTML = 'Ready to start!';
 };
