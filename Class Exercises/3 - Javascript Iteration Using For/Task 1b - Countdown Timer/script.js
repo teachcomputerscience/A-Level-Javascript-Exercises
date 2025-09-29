@@ -8,7 +8,6 @@ function startCountdown() {
     const startNum = parseInt(document.getElementById('startNum').value);
     const delay = parseInt(document.getElementById('delay').value);
     let countdown = [];
-    let pt = '';
     
     // Get display element and button
     const display = document.getElementById('countdownDisplay');
@@ -26,6 +25,11 @@ function startCountdown() {
         return;
    }
 
+    if (delay < 100) {
+        document.getElementById('countdownDisplay').innerHTML = 'Delay must be at least 100ms';
+        return;
+   }
+
     // Check if delay is at least 100ms
     for (let i = 1; i < 10; i++){
         setTimeout(() => {
@@ -34,22 +38,20 @@ function startCountdown() {
     }
     
     // TODO: Disable button during countdown
-    document.getElementById('startButton').disabled = true;
+    button.disabled = true;
 
     // TODO: Create the countdown loop
     // Use a for loop counting backwards
     // Start from startNum and then work back to 0 
     for (let i = startNum; i >= 0; i--){
     // Use setTimeout to create the delay between numbers  
-        setTimeout(startCountdown(i), delay)
-        pt = countdown.push(i);
-        document.getElementById('countdownDisplay').innerHTML = pt
-
-        // TODO: Show "Blast off!" at the end
-        if (i === 0) {
-            document.getElementById('countdownDisplay').innerHTML = countdown.join('   BLAST OFF');
-            return;
-        }
+        setTimeout(() => {
+            display.innerHTML = i > 0 ? i : 'BLAST OFF!';
+            doSomething(i);
+            if (i === 0) {
+                button.disabled = false;
+            }
+        }, delay * (startNum - i));
 
 
     }
