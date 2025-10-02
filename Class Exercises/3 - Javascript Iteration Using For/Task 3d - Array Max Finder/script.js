@@ -1,10 +1,24 @@
-const numbers = [12, 45, 7, 22, 99, 3, 18];
-document.getElementById("btnFindMax").onclick = function() {
-  let max = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
+let values = []
+
+function generateValues() {
+  for (i=0; i<=100; i++) {
+    values.push(Math.ceil(Math.random() * (1000-1) + 1));
   }
-  document.getElementById("output").innerText = `The biggest number is: ${max}`;
-};
+}
+
+
+function findHighest(values) {
+  let highest = 0
+  values.forEach(value => {
+    if (value > highest) {
+      highest = value;
+    }
+    document.getElementById("output").innerHTML = `Highest value is ${highest}`;
+  });
+}
+
+document.getElementById("btnFindMax").addEventListener("click", () => {
+  values = [];
+  generateValues();
+  findHighest(values);
+});
