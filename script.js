@@ -53,6 +53,10 @@ const projects = [
   { name: "Task 3c - Character Counter", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Task 3c - Character Counter/index.html", instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 3c - Character Counter/instructions.md" },
   { name: "Task 3d - Array Max Finder", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Task 3d - Array Max Finder/index.html", instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 3d - Array Max Finder/instructions.md" },
 
+// Task4 - Javeascript Iteration Using While
+  { name: "Task 1a - Count Up", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 1a - Count Up/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 1a - Count Up/instructions.md" },
+  
+
   // 6 - Functions and Procedures
   { name: "Geometry Calculator Problem", folder: "6 - Functions and Procedures", path: "Class Exercises/6 - Functions and Procedures/Geometry Calculator Problem/index.html", instructions: "Class Exercises/6 - Functions and Procedures/Geometry Calculator Problem/Instructions.md" },
   { name: "Grade Calculator Problem", folder: "6 - Functions and Procedures", path: "Class Exercises/6 - Functions and Procedures/Grade Calculator Problem/index.html", instructions: "Class Exercises/6 - Functions and Procedures/Grade Calculator Problem/Instructions.md" },
