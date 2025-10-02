@@ -23,6 +23,7 @@ function generateSequence() {
 
     // TODO: Initialize array to store sequence
     let Sequence = []
+    let sum = 0
 
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
@@ -66,11 +67,14 @@ function generateSequence() {
 
 
     // TODO: Calculate sum of sequence
-    
+    let sl = Sequence.length   
+    for (i=Sequence[0]; i<Sequence.length; i++){
+        sum += Sequence[i];
+    }
 
     // TODO: Display sequence, count of numbers, and sum
-    document.getElementById('sequenceDisplay')
-    document.getElementById('count')
-    document.getElementById('sum')
+    document.getElementById('sequenceDisplay').innerHTML = Sequence.toString();
+    document.getElementById('count').innerHTML = sl.toString
+    document.getElementById('sum').innerHTML = sum.toString
 
 }
