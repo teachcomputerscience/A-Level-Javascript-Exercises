@@ -29,6 +29,11 @@ if (valid == true) {
 }
 
     // Check if values are valid numbers
+
+    if (isNaN(start) || isNaN(end) || isNaN(step)) {
+        output.innerHTML = "Check numbers are valid"
+    }
+
     // Check if step is positive
     // Check if end is greater than start
     
@@ -46,6 +51,11 @@ if (valid == true) {
 
     // TODO: Use for loop with step to generate sequence
     // Remember to use the step in the for loop increment
+    for (i = start; i <= end; i += step) {
+        sequence.push(i + "=>");
+    }
+
+    output.innerHTML = sequence;
     
     // TODO: Display the sequence
     if (valid) {
@@ -58,5 +68,5 @@ if (valid == true) {
 
 // Initialize the page
 window.onload = function() {
-    generateSequence();
+    //generateSequence();
 };
