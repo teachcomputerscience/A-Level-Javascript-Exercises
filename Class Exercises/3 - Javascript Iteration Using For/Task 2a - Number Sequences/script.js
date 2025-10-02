@@ -27,8 +27,8 @@ function generateSequence() {
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
     if (seqtype === 'countUp'){
-        for (){
-            // code goes here
+        for (i=1; i<=MaxNum; i++){
+            sequence.push(i);
         }
     }
 
@@ -36,7 +36,7 @@ function generateSequence() {
     // countDown: Use a for loop counting from N down to 1
     if (seqtype === 'countDown'){
         for (i=MaxNum; i>=1; i--){
-            // code goes here
+            sequence.push(i);
         }
     }
 
@@ -44,7 +44,7 @@ function generateSequence() {
     // steps: Use a for loop with custom step value
     if (seqtype === 'steps'){
         for (i=0; i<MaxNum; i++){
-            // code goes here
+            sequence.push(i);
         }
     }
 
@@ -69,6 +69,8 @@ function generateSequence() {
     
 
     // TODO: Display sequence, count of numbers, and sum
-
+    document.getElementById('sequenceDisplay')
+    document.getElementById('count')
+    document.getElementById('sum')
 
 }
