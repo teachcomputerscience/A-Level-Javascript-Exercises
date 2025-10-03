@@ -11,6 +11,10 @@ function generateTables() {
     
     // TODO: Validate input values
     // Check if values are valid numbers and in correct range
+    if(isNaN(startNum) || isNaN(endNum) || isNaN(numTables)){
+        document.getElementById('stats').innerHTML = "Invalid"
+        return;
+    }
     
     // TODO: Initialize counter for total calculations
     let totalCalculations = 0;
