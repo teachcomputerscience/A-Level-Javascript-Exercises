@@ -24,6 +24,7 @@ function generateSequence() {
     // TODO: Initialize array to store sequence
     let Sequence = []
     let sum = 0
+    let test = 'trying to sync with the main branch'
 
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
