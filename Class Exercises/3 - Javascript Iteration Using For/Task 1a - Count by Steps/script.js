@@ -7,8 +7,27 @@ function generateSequence() {
     
     // Get output element
     const output = document.getElementById('sequenceOutput');
-    
+    let valid = true
+    let positive = false
     // TODO: Validate inputs
+if (step === 0){
+    valid = false
+} else if (step > 0){
+valid = true 
+positive = true
+} else if (step < 0 ){
+    valid = true
+    positive = false
+}
+
+if (valid == true) {
+    if (start < end && positive == false) {
+        valid = false
+    } else if (start > end && positive){
+    valid = false
+    }
+}
+
     // Check if values are valid numbers
 
     if (isNaN(start) || isNaN(end) || isNaN(step)) {
@@ -20,7 +39,16 @@ function generateSequence() {
     
     // TODO: Create array to store sequence
     let sequence = [];
-    
+    if (positive && valid){
+    for (let i = start; i <= end; i += step){
+        sequence.push(i)
+    }
+    } else if (valid) {
+        for (let i = start; i >= end; i += step){
+            sequence.push(i)
+        }
+    }
+
     // TODO: Use for loop with step to generate sequence
     // Remember to use the step in the for loop increment
     for (i = start; i <= end; i += step) {
@@ -30,6 +58,11 @@ function generateSequence() {
     output.innerHTML = sequence;
     
     // TODO: Display the sequence
+    if (valid) {
+        document.getElementById('sequenceOutput').innerHTML = sequence.join(' → ');
+    } else {
+        document.getElementById('sequenceOutput').innerHTML = `You have entered an invalid sequence`
+    }
     // Join the numbers with arrows between them
 }
 
