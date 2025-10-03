@@ -20,6 +20,7 @@ function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
     let MaxNum = parseFloat(document.getElementById('maxNumber').value)
     let seqtype = document.getElementById('sequenceType').value
+    let steps = parseFloat(stepInput.value)
 
     // TODO: Initialize array to store sequence
     let Sequence = []
@@ -30,7 +31,7 @@ function generateSequence() {
     // countUp: Use a for loop counting from 1 to N
     if (seqtype === 'countUp'){
         for (i=1; i<=MaxNum; i++){
-            sequence.push(i);
+            Sequence.push(i);
         }
     }
 
@@ -38,33 +39,36 @@ function generateSequence() {
     // countDown: Use a for loop counting from N down to 1
     if (seqtype === 'countDown'){
         for (i=MaxNum; i>=1; i--){
-            sequence.push(i);
+            Sequence.push(${i.length}));
         }
     }
-
+    
+    
 
     // steps: Use a for loop with custom step value
     if (seqtype === 'steps'){
-        for (i=0; i<MaxNum; i++){
-            sequence.push(i);
+        for (i=0; i<MaxNum; steps++){
+            Sequence.push(i);
         }
     }
+
+  
 
 
     // even: Use a for loop with if statement to check even numbers
-    if (seqtype === 'even'){
-        for (){
+    //if (seqtype === 'even'){
+        //for (){
             // code goes here
-        }
-    }
+        //}
+    //}
 
 
     // odd: Use a for loop with if statement to check odd numbers
-    if (seqtype === 'odd'){
-        for (){
+    //if (seqtype === 'odd'){
+        //for (){
             // code goes here
-        }
-    }
+        //}
+    //}
 
 
     // TODO: Calculate sum of sequence
