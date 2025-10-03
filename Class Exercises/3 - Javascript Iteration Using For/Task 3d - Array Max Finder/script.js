@@ -20,6 +20,16 @@ function findmax(numbers) {
         }
     }
     return max;
+function generateValues() {
+
+}
+
+
+function findHighest(values) {
+
 }
 document.getElementById('output').textContent = findmax(numbers);
 
+document.getElementById("btnFindMax").addEventListener("click", () => {
+
+});

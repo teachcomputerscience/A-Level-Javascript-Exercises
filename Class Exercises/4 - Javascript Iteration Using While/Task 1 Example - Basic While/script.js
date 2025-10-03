@@ -1,2 +1,21 @@
-// Add your event listener and while loop code here
-// When the button is clicked, display numbers 1 to 10 in the output area using a while loop
+const button = document.getElementById('showNumbersBtn');
+const output = document.getElementById('output');
+
+// Add an event listener to the button
+button.addEventListener('click', () => {
+    displayNumbers();
+});
+
+
+function displayNumbers() {
+  let count = 1;
+  let result = '';
+
+  while (count <= 10) {
+    result += count + '<br>';
+    count++;
+  }
+
+  output.innerHTML = result;
+}
+
