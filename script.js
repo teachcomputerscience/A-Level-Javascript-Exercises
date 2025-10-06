@@ -56,7 +56,7 @@ const projects = [
 // Task4 - Javeascript Iteration Using While
   { name: "Task 1a - Count Up", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 1a - Count Up/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 1a - Count Up/instructions.md" },
   { name: "Task 1b - Password Checker", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 1b - Password Checker/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 1b - Password Checker/instructions.md" },
-  
+   { name: "Task 2a - Sum Until Zero", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 2a - Sum Until Zero/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 2a - Sum Until Zero/instructions.md" },
   
 
   // 6 - Functions and Procedures
