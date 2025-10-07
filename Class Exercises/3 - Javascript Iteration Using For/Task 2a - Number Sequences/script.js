@@ -21,9 +21,11 @@ function generateSequence() {
     let MaxNum = parseFloat(document.getElementById('maxNumber').value)
     let seqtype = document.getElementById('sequenceType').value
     let steps = parseFloat(stepInput.value)
+    let ans = 0
+    let counter = 0 
 
     // TODO: Initialize array to store sequence
-    let Sequence = []
+    const Sequence = [];
     let sum = 0
     let test = 'trying to sync with the main branch'
 
@@ -39,18 +41,24 @@ function generateSequence() {
     // countDown: Use a for loop counting from N down to 1
     if (seqtype === 'countDown'){
         for (i=MaxNum; i>=1; i--){
-            Sequence.push(${i.length}));
-        }
-    }
-    
-    
-
-    // steps: Use a for loop with custom step value
-    if (seqtype === 'steps'){
-        for (i=0; i<MaxNum; steps++){
             Sequence.push(i);
         }
     }
+    
+
+
+    // steps: Use a for loop with custom step value
+    if (seqtype === 'steps'){
+       ans =  MaxNum / steps
+       counter = Sequence.length
+        for (i=MaxNum; i>=ans; steps--){;
+        
+            for(counter = Sequence.length - 1; counter >= 0; counter--){
+                Sequence.push(counter);
+            }
+        }
+    }
+
 
   
 
