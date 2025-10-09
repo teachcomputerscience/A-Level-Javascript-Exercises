@@ -7,14 +7,18 @@ function startCountdown() {
     // Get display element and button
     const display = document.getElementById('countdownDisplay');
     const button = document.getElementById('startButton');
-    
+    let sequence = [];
     // TODO: Validate inputs
     // Check if values are valid numbers
     // Check if start number is positive
     // Check if delay is at least 100ms
-    if (startNum > 0) {
+    if (startNum > 0 && delay >= 100) {
         for (let i = startNum; i > 0; i--){
-            
+            setTimeout(() => {
+                    sequence.push(i)
+                    document.getElementById('countdownDisplay').textContent = `${sequence.join('...')}`;
+            }, delay * (startNum - i))
+        
         }
     }
     // TODO: Disable button during countdown
