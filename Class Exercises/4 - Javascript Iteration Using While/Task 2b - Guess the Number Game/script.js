@@ -1,13 +1,25 @@
-// Add your event listener and while loop code here
+// Guess the Number Game implementation
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0;
+let gameOver = false;
+
 document.getElementById('guessBtn').addEventListener('click', function () {
-    let number = parseFloat(document.getElementById('number').value);
-    let i = 1
-    let output = ''
+    if (gameOver) return;
+    let guess = parseInt(document.getElementById('guessInput').value);
+    let outputDiv = document.getElementById('output');
+    attempts++;
 
-    while (number !== i) {
-       output += i + ''; 
-       
-
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+        outputDiv.textContent = 'Please enter a valid number between 1 and 100.';
+        return;
     }
 
-// Generate a random number, then use a while loop to check guesses until correct
+    if (guess === randomNumber) {
+        outputDiv.textContent = `Correct! You guessed the number in ${attempts} attempts.`;
+        gameOver = true;
+    } else if (guess < randomNumber) {
+        outputDiv.textContent = 'Too low! Try again.';
+    } else {
+        outputDiv.textContent = 'Too high! Try again.';
+    }
+});

@@ -3,15 +3,23 @@ document.getElementById('checkBtn').addEventListener('click', function() {
 
     
     let correctPassword = "password"
- let message = ''
- 
-    while(i  != correctPassword ) {
-       let passwordInput = parseFloat(document.getElementById('passwordInput').value);
-     let i = passwordInput
-             
-    }
-          document.getElementById('message').textContent = 'the password is correct'
+    
+ let incorrect = true
+    while(incorrect) { 
          
+         let passwordInput = document.getElementById('passwordInput').value;
+        
+         if (passwordInput === correctPassword) {
+             incorrect = false
+             alert ('the password is correct')
+         }
+         else {
+            incorrect = false
+            alert ('enter the password again')
+         }       
+  
+             
+   }
           
     });
 // When the button is clicked, use a while loop to check the password until correct
