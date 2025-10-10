@@ -23,9 +23,15 @@ function generateSequence() {
     
     // TODO: Use for loop with step to generate sequence
     // Remember to use the step in the for loop increment
-    for (i = start; i <= end; i += step) {
-        sequence.push(i + "=>");
+    if (start < end && step > 0) {
+    for (let i = start; i <= end; i += step) {
+        sequence.push(` ${i}`);
     }
+} else if (start > end && step < 0){
+    for (let i = start; i >= end; i += step){
+        sequence.push(` ${i}`);
+    }
+}
 
     output.innerHTML = sequence;
     

@@ -52,7 +52,7 @@ const projects = [
   { name: "Task 3b - Array Fun", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Task 3b - Array Fun/index.html", instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 3b - Array Fun/instructions.md" },
   { name: "Task 3c - Character Counter", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Task 3c - Character Counter/index.html", instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 3c - Character Counter/instructions.md" },
   { name: "Task 3d - Array Max Finder", folder: "3 - Javascript Iteration Using For", path: "Class Exercises/3 - Javascript Iteration Using For/Task 3d - Array Max Finder/index.html", instructions: "Class Exercises/3 - Javascript Iteration Using For/Task 3d - Array Max Finder/instructions.md" },
-
+  
   // 6 - Functions and Procedures
   { name: "Geometry Calculator Problem", folder: "6 - Functions and Procedures", path: "Class Exercises/6 - Functions and Procedures/Geometry Calculator Problem/index.html", instructions: "Class Exercises/6 - Functions and Procedures/Geometry Calculator Problem/Instructions.md" },
   { name: "Grade Calculator Problem", folder: "6 - Functions and Procedures", path: "Class Exercises/6 - Functions and Procedures/Grade Calculator Problem/index.html", instructions: "Class Exercises/6 - Functions and Procedures/Grade Calculator Problem/Instructions.md" },
