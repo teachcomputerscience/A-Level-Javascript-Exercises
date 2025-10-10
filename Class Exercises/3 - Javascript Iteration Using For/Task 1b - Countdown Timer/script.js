@@ -16,7 +16,7 @@ function startCountdown() {
         for (let i = startNum; i > 0; i--){
             setTimeout(() => {
                     sequence.push(i)
-                    document.getElementById('countdownDisplay').textContent = `${sequence.join('...')}`;
+                    document.getElementById('countdownDisplay').textContent = `${sequence.join('...')} Blast Off!`;
             }, delay * (startNum - i))
         
         }
