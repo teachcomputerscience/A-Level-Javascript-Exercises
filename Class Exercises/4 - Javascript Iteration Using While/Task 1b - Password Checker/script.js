@@ -11,11 +11,11 @@ document.getElementById('checkBtn').addEventListener('click', function() {
         
          if (passwordInput === correctPassword) {
              incorrect = false
-             alert ('the password is correct')
+             document.getElementById("message").textContent = `the password is correct`;
          }
          else {
             incorrect = false
-            alert ('enter the password again')
+            document.getElementById("message").textContent = ` The password is incorrect`;
          }       
   
              

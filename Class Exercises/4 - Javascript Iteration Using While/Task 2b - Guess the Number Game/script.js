@@ -15,11 +15,11 @@ document.getElementById('guessBtn').addEventListener('click', function () {
     }
 
     if (guess === randomNumber) {
-        outputDiv.textContent = `Correct! You guessed the number in ${attempts} attempts.`;
+        outputDiv.textContent = `Correct it took ${attempts} attempts.`;
         gameOver = true;
     } else if (guess < randomNumber) {
-        outputDiv.textContent = 'Too low! Try again.';
+        outputDiv.textContent = 'Too low.';
     } else {
-        outputDiv.textContent = 'Too high! Try again.';
+        outputDiv.textContent = 'Too high.';
     }
 });

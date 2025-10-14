@@ -58,7 +58,8 @@ const projects = [
   { name: "Task 1b - Password Checker", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 1b - Password Checker/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 1b - Password Checker/instructions.md" },
    { name: "Task 2a - Sum Until Zero", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 2a - Sum Until Zero/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 2a - Sum Until Zero/instructions.md" },
   { name: "Task 2b - Guess the Number Game", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 2b - Guess the Number Game/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 2b - Guess the Number Game/instructions.md" },
-  
+  { name: "Task 3a - Reverse a String", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 3a - Reverse a String/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 3a - Reverse a String/instructions.md" },
+   { name: "Task 3c - Collecting Usernames", folder: "4 - Javascript Iteration Using While", path: "Class Exercises/4 - Javascript Iteration Using While/Task 3c - Collecting Usernames/index.html", instructions: "Class Exercises/4 - Javascript Iteration Using While/Task 3c - Collecting Usernames/instructions.md" },
 
   // 6 - Functions and Procedures
   { name: "Geometry Calculator Problem", folder: "6 - Functions and Procedures", path: "Class Exercises/6 - Functions and Procedures/Geometry Calculator Problem/index.html", instructions: "Class Exercises/6 - Functions and Procedures/Geometry Calculator Problem/Instructions.md" },
