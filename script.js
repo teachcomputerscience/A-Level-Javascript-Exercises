@@ -158,6 +158,19 @@ const projects = [
   { name: "Task 3 Example - Collision Handling", folder: "11 - Hashing", path: "Class Exercises/11 - Hashing/Task 3 Example - Collision Handling/index.html", instructions: "Class Exercises/11 - Hashing/Task 3 Example - Collision Handling/instructions.md" },
   { name: "Task 3a - Collision Handling", folder: "11 - Hashing", path: "Class Exercises/11 - Hashing/Task 3a - Collision Handling/index.html", instructions: "Class Exercises/11 - Hashing/Task 3a - Collision Handling/instructions.md" },
 
+  // 12 - Stacks
+  { name: "Exercise 1 Example - Stack with Array", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1 Example - Stack with Array/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1 Example - Stack with Array/instructions.md" },
+  { name: "Exercise 1a - Stack Array Easy", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1a - Stack Array Easy/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1a - Stack Array Easy/instructions.md" },
+  { name: "Exercise 1b - Stack Array Medium", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1b - Stack Array Medium/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1b - Stack Array Medium/instructions.md" },
+  { name: "Exercise 1c - Stack Array Hard", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1c - Stack Array Hard/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1c - Stack Array Hard/instructions.md" },
+  { name: "Exercise 1d - Stack Array Assess", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1d - Stack Array Assess/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1d - Stack Array Assess/instructions.md" },
+
+  { name: "Exercise 2 Example - Stack with Class", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 2 Example - Stack with Class/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 2 Example - Stack with Class/instructions.md" },
+  { name: "Exercise 2a - Stack Class Easy", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 2a - Stack Class Easy/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 2a - Stack Class Easy/instructions.md" },
+  { name: "Exercise 2b - Stack Class Medium", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 2b - Stack Class Medium/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 2b - Stack Class Medium/instructions.md" },
+  { name: "Exercise 2c - Stack Class Hard", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 2c - Stack Class Hard/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 2c - Stack Class Hard/instructions.md" },
+  { name: "Exercise 2d - Stack Class Assess", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 2d - Stack Class Assess/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 2d - Stack Class Assess/instructions.md" },
+
 ];
 
 // Group projects by folder
